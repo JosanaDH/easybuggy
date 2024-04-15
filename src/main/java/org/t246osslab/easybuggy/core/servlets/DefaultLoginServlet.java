@@ -77,6 +77,7 @@ public class DefaultLoginServlet extends AbstractServlet {
             bodyHtml.append(getInfoMsg((String) req.getAttribute("login.page.note"), locale));
         }
         bodyHtml.append("</form>");
+        //adding a comment so it changes the vuln slightly without generating a new id
         responseToClient(req, res, getMsg("title.login.page", locale), bodyHtml.toString());
     }
 
