@@ -1,3 +1,4 @@
 exclude:
   global:
-    - '**/vulnerabilities/**'
+    - '**/vendor/**'
+    - '**/node_modules/**'
